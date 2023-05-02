@@ -7,6 +7,8 @@
 header{
     width: 100%;
     height: 100vh;
+    color: white;
+    background-color: #caa47f;
 }
 
 nav{
@@ -16,19 +18,75 @@ nav{
     align-items: center;
     justify-content: space-between;
     font-size: 1.5em;
-    background-color: rgb(43, 188, 233);
+    background-color: transparent;
 }
 
+.logo{
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    font-weight: 900;
+}
 .main a{
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: 1s;
 }
 
+.main a:hover{
+    color: #501800;
+}
 .main{
     width: 50%;
     display: flex;
     justify-content: space-between;
+    margin-right: 20px
 }
 
 
+img{
+    width:40%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: rotate(5deg);
+    transition: ease-in-out 3s;
+}
 
+img:hover{
+    transform: rotate(-5deg);
+}
+
+.description{
+    width: 500px;
+    position: absolute;
+    right: 7%;
+    top: 20%;
+}
+
+.description h2{
+    font-size: 3em;
+}
+
+.description h3{
+    font-size: 1.5em;
+}
+
+.btn{
+    background-color: white;
+    color: #1f0500;
+    padding: 15px 27px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 15%;
+    left: 45%;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: #501800;
+    color: white;
+}
